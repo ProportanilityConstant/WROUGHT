@@ -1,0 +1,33 @@
+[
+  {
+    "id": "sample-debt-1",
+    "createdAt": "2026-06-01T09:00:00.000Z",
+    "description": "Replace temporary report aggregation with a reusable helper",
+    "deferredStep": "existing-helper",
+    "files": ["src/report.js"],
+    "priority": "high",
+    "reason": "The current implementation is deliberately small for this sample.",
+    "deadline": "2026-08-15T09:00:00.000Z",
+    "tags": ["cleanup", "reporting"]
+  },
+  {
+    "id": "sample-debt-2",
+    "createdAt": "2026-07-28T09:00:00.000Z",
+    "description": "Add edge-case coverage for empty input",
+    "deferredStep": "test-required",
+    "files": ["src/report.test.js"],
+    "priority": "medium",
+    "reason": "Happy-path coverage is enough for the first prototype.",
+    "tags": ["testing"]
+  },
+  {
+    "id": "sample-debt-3",
+    "createdAt": "2026-08-23T09:00:00.000Z",
+    "description": "Document the report data contract",
+    "deferredStep": "minimal-code",
+    "files": ["README.md", "src/report.js"],
+    "priority": "low",
+    "reason": "The sample currently has only one consumer.",
+    "tags": ["docs"]
+  }
+]
